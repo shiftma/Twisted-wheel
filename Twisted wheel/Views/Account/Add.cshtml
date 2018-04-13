@@ -1,0 +1,12 @@
+﻿@model TwistedWheel.Models.User
+
+<br />
+
+@if (String.IsNullOrEmpty(Model.Username))
+{
+    <p>Please <a asp-area="" asp-controller="Account" asp-action="Add">Sign up</a>.</p>
+}
+else
+{
+    <p>Welcome, @Model.Username!</p>
+}

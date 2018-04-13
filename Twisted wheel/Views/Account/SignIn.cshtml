@@ -1,0 +1,24 @@
+﻿@model TwistedWheel.Models.User
+
+<br />
+<form method="post" action="SignIn">
+    <p>@ViewBag.PasswordError @ViewBag.UsernameError</p>
+
+    <div class="form-element">
+        <label>Username</label>
+        <input name="Username" value="@Model.Username" type="text" />
+        <span asp-validation-for="Username" class="text-danger"
+            data-valmsg-replace="true">The Username is required.
+        </span>
+    </div>
+    <div class="form-element">
+        <label>Password</label>
+        <input name="Password" value="@Model.Password" type="password" />
+        <span asp-validation-for="Password" class="text-danger"
+            data-valmsg-replace="true">The Password is required.
+        </span>
+    </div>
+
+    <input type="submit" value="Submit" />
+</form>
+

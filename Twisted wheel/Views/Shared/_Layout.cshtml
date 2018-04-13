@@ -30,12 +30,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">My Routes</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Place to go</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">News</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Stats</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Sign In</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Sign Up</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="MyRoutes" asp-action="Index">My routes</a></li>
+                    <li><a asp-area="" asp-controller="MyRoutes" asp-action="Places">Place to go</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="News">News</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                    <li class="account"><a asp-area="" asp-controller="Account" asp-action="SignIn">Sign In</a></li>
+                    <li class="account"><a asp-area="" asp-controller="Account" asp-action="SignUp">Sign Up</a></li>
                 </ul>
             </div>
         </div>
